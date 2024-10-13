@@ -46,6 +46,7 @@ Goals
 
 Creation
     _id                 | MongoDB_ID
+    creationNumber      | Number UNIQUE AUTOINCREMENT
     motivator           | String
     desire              | String
     belief              | String

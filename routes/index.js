@@ -1,5 +1,6 @@
 const routes = require('express').Router();
 const profile = require('./profile');
+const creation = require('./creation');
 const swagger = require('./swagger');
 
 // See https://swagger-autogen.github.io/docs/swagger-2/schemas-and-definitions under @schema section for guidance
@@ -28,6 +29,7 @@ routes.get('/', (req, res) => {
 
 routes.use('/', swagger);
 routes.use('/profiles', profile);
+routes.use('/creations', creation);
 
 
 module.exports = routes;

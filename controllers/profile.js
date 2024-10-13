@@ -47,8 +47,7 @@ exports.findAll = (req, res) => {
       }
     )
       .sort({ username: 1 }) // Sort by name in ascending order
-      .then((data) => {
-        console.log('Fetched data:', data); // Add this line for debugging
+      .then((data) => {        
         // Create a new array with ordered objects *additionalInfo* at bottom
         const orderedData = data.map(profile => ({
           username: profile.username,
