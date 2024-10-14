@@ -73,6 +73,57 @@ exports.update = (req, res) => {
       message: 'Data to update can not be empty!',
     });
   }
+  /* #swagger.parameters['creationNumber'] = {
+         in: 'path',
+         description: 'Unique identifier for the Creation',
+         required: true,
+         type: 'string'
+     } */
+  /* #swagger.parameters['body'] = {
+        in: 'body',
+        description: 'Fields to update',
+        required: true,
+         '@schema': {
+          "type": "object",
+          "properties": {
+            "goal": {
+              "type": "string",
+              "example": "Updated goal"
+            },
+            "motivator": {
+              "type": "string",
+              "example": "Updated motivator"
+            },
+            "desire": {
+              "type": "string",
+              "example": "Updated desire"
+            },
+            "belief": {
+              "type": "string",
+              "example": "Updated belief"
+            },
+            "knowledge": {
+              "type": "string",
+              "example": "Updated knowledge"
+            },
+            "plan": {
+              "type": "string",
+              "example": "Updated plan"
+            },
+            "action": {
+              "type": "string",
+              "example": "Updated action"
+            },
+            "victory": {
+              "type": "string",
+              "example": "Updated victory"
+            }
+          },
+          "required": "goal"
+        }
+      }
+    }
+  */
 
   const creationNumber = req.params.creationNumber;  
 

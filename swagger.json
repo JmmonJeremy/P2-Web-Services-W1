@@ -130,20 +130,47 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Fields to update",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "Updated username"
+                },
+                "firstName": {
+                  "type": "string",
+                  "example": "Updated firstName"
+                },
+                "middleName": {
+                  "type": "string",
+                  "example": "Updated middleName"
+                },
+                "lastName": {
+                  "type": "string",
+                  "example": "Updated lastName"
+                },
+                "idol": {
+                  "type": "string",
+                  "example": "Updated idol"
+                },
+                "photo": {
+                  "type": "string",
+                  "example": "Updated photo"
+                }
+              },
+              "required": "idol"
+            }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
           "400": {
             "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
           }
         }
       },
@@ -262,21 +289,57 @@
             "name": "creationNumber",
             "in": "path",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "description": "Unique identifier for the Creation"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Fields to update",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "goal": {
+                  "type": "string",
+                  "example": "Updated goal"
+                },
+                "motivator": {
+                  "type": "string",
+                  "example": "Updated motivator"
+                },
+                "desire": {
+                  "type": "string",
+                  "example": "Updated desire"
+                },
+                "belief": {
+                  "type": "string",
+                  "example": "Updated belief"
+                },
+                "knowledge": {
+                  "type": "string",
+                  "example": "Updated knowledge"
+                },
+                "plan": {
+                  "type": "string",
+                  "example": "Updated plan"
+                },
+                "action": {
+                  "type": "string",
+                  "example": "Updated action"
+                },
+                "victory": {
+                  "type": "string",
+                  "example": "Updated victory"
+                }
+              },
+              "required": "goal"
+            }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
           "400": {
             "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
           }
         }
       },

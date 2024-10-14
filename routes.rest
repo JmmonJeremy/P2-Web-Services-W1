@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ###
 // ALTERING A CREATION WITH PUT
-PUT https://p2-web-services-w1.onrender.com/creations/3
+PUT https://p2-web-services-w1.onrender.com/creations/4
 Content-Type: application/json
 
 {
@@ -142,7 +142,7 @@ Content-Type: application/json
 DELETE https://p2-web-services-w1.onrender.com/profiles/DemoWoman
 ###
 // REMOVING A CREATION WITH DELETE
-DELETE https://p2-web-services-w1.onrender.com/creations/3
+DELETE https://p2-web-services-w1.onrender.com/creations/4
 ###
 // CREATING CREATION WITH POST
 POST https://p2-web-services-w1.onrender.com/creations

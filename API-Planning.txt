@@ -11,7 +11,7 @@ Theme
 Profile 
     _id                 | MongoDB_ID
     username            | String UNIQUE
-    motto            | String 
+    motto               | String 
     firstName           | String
     middleName          | String
     lastName            | String

@@ -94,6 +94,43 @@ exports.update = (req, res) => {
       message: 'Data to update can not be empty!',
     });
   }
+  /* #swagger.parameters['body'] = {
+        in: 'body',
+        description: 'Fields to update',
+        required: true,
+         '@schema': {
+          "type": "object",
+          "properties": {
+            "username": {
+              "type": "string",
+              "example": "Updated username"
+            },
+            "firstName": {
+              "type": "string",
+              "example": "Updated firstName"
+            },
+            "middleName": {
+              "type": "string",
+              "example": "Updated middleName"
+            },
+            "lastName": {
+              "type": "string",
+              "example": "Updated lastName"
+            },
+            "idol": {
+              "type": "string",
+              "example": "Updated idol"
+            },
+            "photo": {
+              "type": "string",
+              "example": "Updated photo"
+            }
+          },
+          "required": "idol"
+        }
+      }
+    }
+  */
 
   const username = req.params.username;
 
