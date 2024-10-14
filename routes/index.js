@@ -21,9 +21,7 @@ routes.get('/', (req, res) => {
         }    
   */ 
   console.log("GET / route handler is being hit");
-  const docData = {
-    documentationURL: 'Welcome to the Place that Turns Your Goals into Victorious Creations!',
-  };
+  const docData = 'Welcome to the Place that Turns Your Goals into Victorious Creations!';
   res.send(docData);
 });
 

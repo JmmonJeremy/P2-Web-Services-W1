@@ -5,10 +5,10 @@
     "description": "Goal Creation Process App Personal Project",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "p2-web-services-w1.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
@@ -87,8 +87,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
           },
           "400": {
             "description": "Bad Request"
@@ -220,8 +220,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
           },
           "400": {
             "description": "Bad Request"

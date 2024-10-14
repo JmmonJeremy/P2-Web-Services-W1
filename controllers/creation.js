@@ -24,7 +24,7 @@ exports.create = (req, res) => {
   creation
     .save(creation)
     .then((data) => {
-      res.send(data);
+      res.status(201).res.send(data);
     })
     .catch((err) => {
       res.status(500).send({
